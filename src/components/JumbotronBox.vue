@@ -47,10 +47,11 @@ export default {};
     p {
       font-weight: 400;
       span {
-        color: $MountainMeadow;
+        color: $TurquoiseBlue;
         font-weight: bolder;
         text-decoration: underline;
         text-decoration-color: $ShadyLady;
+        cursor: pointer;
       }
     }
     button {

@@ -136,9 +136,12 @@ export default {};
     }
   }
   .row {
-    margin-top: 20px;
+    margin:30px 0;
     display: flex;
     justify-content: center;
+    button{
+      margin-bottom: 60px;
+    }
   }
 }
 </style>
