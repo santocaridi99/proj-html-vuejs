@@ -1,3 +1,4 @@
+@import "@/style/variables.scss";
 // body
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -10,4 +11,22 @@ ul{
 // i link non avranno text decoration
 a{
     text-decoration: none;
+}
+// container avranno margin 0 auto
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+// i titoli avranno questo colore
+h1,h2,h3,h4,h5{
+    color: $GunPowder;
+}
+// bottoni
+button {
+    background-color: $MountainMeadow;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: $white;
+    margin: 10px 0;
 }
