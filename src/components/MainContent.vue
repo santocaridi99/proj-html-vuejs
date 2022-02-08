@@ -9,11 +9,13 @@
         <!-- sezione dettagli -->
         <details-box></details-box>
         <!-- sezione testimonial -->
-        <testial-box></testial-box>
+        <testimonial-box></testimonial-box>
         <!-- sezione infobox -->
         <info-box></info-box>
         <!-- sezione NewsLetter -->
-        <newsletter-box></newsletter-box>
+        <news-letter></news-letter>
+      
+      
     </div>
 </template>
 <script>
@@ -28,9 +30,10 @@ import DetailsBox from './DetailsBox.vue'
 // importo sezione testimonals
 import TestimonialBox from './TestimonialBox.vue'
 // importo sezione info
-import Infobox from './InfoBox.vue'
+import InfoBox from './InfoBox.vue'
 // importo sezione newsletter 
-import NewsLetterBox from './NewsLetterBox.vue'
+import NewsLetter from './NewsLetter.vue'
+
 export default {
     components:{
         JumbotronBox,
@@ -38,8 +41,8 @@ export default {
         CoursesBox,
         DetailsBox,
         TestimonialBox,
-        Infobox,
-        NewsLetterBox,
+        InfoBox,
+        NewsLetter
     }
 }
 </script>
