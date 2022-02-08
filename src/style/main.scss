@@ -29,4 +29,14 @@ button {
     padding: 10px 30px;
     color: $white;
     margin: 10px 0;
+    cursor: pointer;
+}
+// colore standard paragrafi
+p{
+    color:$pcolor;
+}
+// prezzi
+.price{
+    color:#1fad96;
+    font-weight: bolder;
 }

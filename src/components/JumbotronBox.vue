@@ -45,7 +45,6 @@ export default {};
   .jumbotron-textarea {
     width: 400px;
     p {
-      color: $GunPowder;
       font-weight: 400;
       span {
         color: $MountainMeadow;

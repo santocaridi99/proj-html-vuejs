@@ -36,7 +36,6 @@ export default {};
   .client {
     width: calc(100% / 7 - 40px);
     margin: 40px;
-    height: 80px;
     img {
       width: 100%;
       object-fit: cover;
