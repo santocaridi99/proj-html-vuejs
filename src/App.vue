@@ -6,7 +6,13 @@
     <!-- sezione main  -->
     <main-content></main-content>
     <!-- sezione footer -->
-    <footer-container></footer-container>
+    <!-- props che passo al footer -->
+    <footer-container
+      :address="address"
+      :socials="socials"
+      :links="links"
+      :informations="informations"
+    ></footer-container>
   </div>
 </template>
 
@@ -28,39 +34,117 @@ export default {
   },
   data() {
     return {
-      navbar:[
+      // array di oggetti per la navbar
+      navbar: [
         {
-          id:"1",
-          text:"Home",
-          url:"/"
+          id: "1",
+          text: "Home",
+          url: "/",
         },
-         {
-          id:"2",
-          text:"Pages",
-          url:"/"
+        {
+          id: "2",
+          text: "Pages",
+          url: "/",
         },
-         {
-          id:"3",
-          text:"Courses",
-          url:"/"
+        {
+          id: "3",
+          text: "Courses",
+          url: "/",
         },
-         {
-          id:"4",
-          text:"Features",
-          url:"/"
+        {
+          id: "4",
+          text: "Features",
+          url: "/",
         },
-         {
-          id:"5",
-          text:"Blog",
-          url:"/"
+        {
+          id: "5",
+          text: "Blog",
+          url: "/",
         },
-         {
-          id:"6",
-          text:"Shop",
-          url:"/"
+        {
+          id: "6",
+          text: "Shop",
+          url: "/",
         },
-
-      ]
+      ],
+      // array per indirizzi nel footer
+      address: [
+        {
+          id: "7",
+          text: "382 NE 191st St #87394 Miami,Fl 33179-3899",
+          content: "address",
+        },
+        {
+          id: "8",
+          text: "+1(305)547-9909(9am - 5pm EST,Monday - Friday)",
+          content: "number+disponibility",
+        },
+        {
+          id: "9",
+          text: "support@maxcoach.com",
+          content: "email",
+        },
+      ],
+      // array per icone social nel footer
+      // usiamo fontawsome e passiamo i codici
+      socials: [
+        "fab fa-facebook-f",
+        "fab fa-twitter",
+        "fab fa-instagram",
+        "fab fa-linkedin",
+      ],
+      // array per lista Explore nel footer
+      links: [
+        { id: "10", text: "Start Here", url: "/" },
+        {
+          id: "11",
+          text: "Blog",
+          url: "/",
+        },
+        {
+          id: "12",
+          text: "About us",
+          url: "/",
+        },
+        {
+          id: "13",
+          text: "Success story",
+          url: "/",
+        },
+        {
+          id: "14",
+          text: "Courses",
+          url: "/",
+        },
+        {
+          id: "15",
+          text: "Contact us",
+          url: "/",
+        },
+      ],
+      // array informazioni nel footer
+      informations: [
+        {
+          id: "16",
+          text: "Membership",
+          url: "/",
+        },
+        {
+          id: "17",
+          text: "Purchase guide",
+          url: "/",
+        },
+        {
+          id: "18",
+          text: "Privacy policy",
+          url: "/",
+        },
+        {
+          id: "19",
+          text: "Terms of services",
+          url: "/",
+        },
+      ],
     };
   },
 };
