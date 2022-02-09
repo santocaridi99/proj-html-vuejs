@@ -92,12 +92,6 @@ header {
         display: flex;
         align-items: center;
         border-radius: 5px;
-        input {
-          width: 200px;
-          border: none;
-          background-color: $HintofRed;
-          font-size: 16px;
-        }
         .fa-search {
           color: $MountainMeadow;
         }

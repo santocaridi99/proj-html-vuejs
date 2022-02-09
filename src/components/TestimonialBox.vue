@@ -92,7 +92,7 @@ export default {};
     text-align: center;
     h1 {
       span {
-        color: $TurquoiseBlue;
+        color: $MountainMeadow;
       }
     }
   }
@@ -142,7 +142,7 @@ export default {};
         h3 {
           margin-bottom: 5px;
           span {
-            color: $TurquoiseBlue;
+            color: $MountainMeadow;
           }
         }
         h1 {
