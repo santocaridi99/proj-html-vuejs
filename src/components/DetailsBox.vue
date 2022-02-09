@@ -1,10 +1,11 @@
 <template>
-  <!-- sezione Dettagli -->
+  <!-- sezione Dettagli o sezione About us-->
   <div class="container">
     <div class="detailsIntro">
       <p>MAXCOACH AVAILABLE COURSES</p>
       <h1>Access <span>Smart Tutoring</span> Program For Benefits.</h1>
     </div>
+    <!-- tre card dove ci sono spiegati vari dettagli dell'azienda -->
     <div class="datailscards">
       <div class="dcard">
         <div class="dcardimage">
@@ -39,10 +40,31 @@
         <div class="dcardText">
           <h1>Multimedia Channels</h1>
           <p>
-            We provide study materials with various formats: video,audio,slides,doc,prints,books and application
+            We provide study materials with various formats:
+            video,audio,slides,doc,prints,books and application
           </p>
           <h4>Start Now &rarr;</h4>
         </div>
+      </div>
+    </div>
+    <!-- sezione video -->
+    <div class="media">
+      <div class="video">
+        <img src="../assets/home-2-popup-video-poster.jpg" alt="video" />
+        <!-- icona youtube -->
+        <img class="yt" src="../assets/icon-youtube-play.png" alt="youtube" />
+      </div>
+      <div class="mediatext">
+        <div class="subtitle">GET STARTED <strong>EFFORTLESSLY</strong></div>
+        <h1>Enjoy Our</h1>
+        <!-- scritta con grandezza e colore particolare -->
+        <div><span class="companionship">Companionship</span></div>
+        <p>
+          Sneek peek into what has in store for you on our online teaching and
+          mentoring portal.Seek for some hidden hints of early-bird rewards as
+          well.
+        </p>
+        <div class="freebook">Download free guidebook &rarr;</div>
       </div>
     </div>
   </div>
@@ -53,7 +75,7 @@ export default {};
 <style lang="scss" scoped>
 @import "@/style/variables.scss";
 .container {
-    margin-top: 80px;
+  margin-top: 80px;
   .detailsIntro {
     text-align: center;
     h1 {
@@ -68,6 +90,42 @@ export default {};
     .dcard {
       width: calc(100% / 3 - 20px);
       margin: 20px;
+    }
+  }
+  .media {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    .video {
+      position: relative;
+      .yt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .mediatext {
+      width: 350px;
+      .subtitle {
+        color: $GunPowder;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .companionship {
+        color: $MountainMeadow;
+        font-size: 40px;
+      }
+      .freebook{
+        margin-top: 50px;
+        font-weight: bolder;
+        text-decoration: underline;
+        cursor: pointer;
+        color: $MountainMeadow;
+      }
     }
   }
 }
