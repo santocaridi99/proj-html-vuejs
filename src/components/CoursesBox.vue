@@ -116,7 +116,8 @@ export default {};
       flex-wrap: wrap;
       .course {
         display: flex;
-        width: 50%;
+        width: calc(50% - 20px);
+        margin-right: 20px;
         margin-top: 50px;
 
         img {

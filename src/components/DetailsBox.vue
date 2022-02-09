@@ -64,6 +64,7 @@
           mentoring portal.Seek for some hidden hints of early-bird rewards as
           well.
         </p>
+        <!-- classe per link che porta a scaricare la guida(per ora un semplice div) -->
         <div class="freebook">Download free guidebook &rarr;</div>
       </div>
     </div>
