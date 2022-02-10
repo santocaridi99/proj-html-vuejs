@@ -7,11 +7,13 @@
     <main-content></main-content>
     <!-- sezione footer -->
     <!-- props che passo al footer -->
+    <!-- al click di top eseguiremo funzione in methods scroll to top -->
     <footer-container
       :address="address"
       :socials="socials"
       :links="links"
       :informations="informations"
+      @top="scrollToTop"
     ></footer-container>
   </div>
 </template>
@@ -146,6 +148,17 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    // funzione che permette di tornare in cima alla finestra
+    // con behavior smooth invece di farlo direttamente , lo esegue con animazione
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>

@@ -43,7 +43,8 @@
         </div>
       </div>
       <!-- pulsante per tornare in cima -->
-      <div class="backtop">
+      <!-- click eseguiremo tramite il parent "top" -->
+      <div class="backtop" @click="$emit('top')">
         <i class="fas fa-arrow-up"></i>
       </div>
     </div>
