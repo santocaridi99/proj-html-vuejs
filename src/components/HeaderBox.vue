@@ -44,8 +44,12 @@ export default {
 @import "@/style/variables.scss";
 header {
   height: 80px;
-  border-bottom: 5px solid $HintofRed;
   width: 100%;
+  background-color: $white;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 5px solid #f8f8f8;
   .container {
     height: 100%;
     align-items: center;

@@ -58,7 +58,7 @@ export default {};
 @import "@/style/variables.scss";
 .container {
   align-items: center;
-  margin-top: 50px;
+  margin-top: 200px;
   justify-content: space-between;
   .jumbotron-textarea {
     width: 400px;
@@ -83,7 +83,7 @@ export default {};
     justify-content: flex-end;
     .jumbo {
       border-radius: 50%;
-      z-index: 1000;
+      z-index: 1;
     }
     .square {
       position: absolute;
