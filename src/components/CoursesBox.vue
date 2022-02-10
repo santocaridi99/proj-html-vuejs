@@ -9,7 +9,9 @@
         <p>STIMULATED TO LEARN?</p>
         <h1>Featured Online Courses</h1>
       </div>
+      <!-- contenitore dei corsi -->
       <div class="courses flex">
+        <!-- corsi avranno immagine , sezione con testo , price prezzo , contenitore dettagli -->
         <div class="course flex">
           <img src="../assets/course-02-480x298.jpg" alt="corso1" />
           <div class="coursetext flex">

@@ -63,7 +63,7 @@
             <div class="artistText">
               <p>ARTIST</p>
               <h4>Brush Strokes Energize Trees in Paintings</h4>
-              <!-- sezione della card dove ci sono data e visualizzazioni -->
+              <!-- sezione della card dove ci sono data e visualizzazioni views -->
               <div class="date-views flex">
                 <div class="date">
                   <i class="far fa-calendar-alt"></i>

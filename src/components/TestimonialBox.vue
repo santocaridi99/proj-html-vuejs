@@ -6,6 +6,7 @@
       <h1>Our <span class="greenspan">top learners' </span>verbatim</h1>
     </div>
     <!-- contenitore con card delle recensioni -->
+    <!-- carte dei testimonial tcard -->
     <div class="testimonial-cards flex">
       <div class="tcard opacity">
         <h3>High level of efficiency and scientific teaching methods</h3>
@@ -14,6 +15,7 @@
           the subject I want to learn from the syllabus.Great study portal for
           people like me.
         </p>
+        <!-- dati dei testimoni -->
         <div class="t-data flex">
           <img src="../assets/testimonial-avata-02.jpg" alt="testimonial1" />
           <div class="t-text">

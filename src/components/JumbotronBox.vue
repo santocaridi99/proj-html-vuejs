@@ -85,6 +85,7 @@ export default {};
       border-radius: 50%;
       z-index: 1;
     }
+    // sono vari item di layout
     .square {
       left: -70px;
       top: 33%;

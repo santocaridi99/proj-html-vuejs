@@ -8,6 +8,7 @@
       <h1>Subscibe <span class="greenspan">Newsletters</span></h1>
       <p>Enter your email address to register to our newsletter subscription</p>
       <p>delivered on a regular basis!</p>
+      <!-- sezione contentent input -->
       <div class="inputbox flex">
         <div class="bg-hint flex">
           <input type="text" placeholder="Enter your email" />
@@ -15,10 +16,11 @@
         <button>Subscibe</button>
       </div>
     </div>
+    <!-- item di layout -->
     <div class="layout-item">
       <img src="../assets/maxcoach-shape-02.png" alt="item" />
     </div>
-    <!-- shape rotato -->
+    <!-- shape rotato  item di layout-->
     <img class="layout rshape" src="../assets/maxcoach-shape-09.png" alt="layout decoration">
   </div>
 </template>

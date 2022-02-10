@@ -9,6 +9,7 @@
       </h1>
     </div>
     <!-- tre card dove ci sono spiegati vari dettagli dell'azienda -->
+    <!-- chiamate dcard, con sezione imagine , sezione testo -->
     <div class="datailscards flex">
       <div class="dcard">
         <div class="dcardimage">
