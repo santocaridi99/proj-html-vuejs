@@ -28,7 +28,7 @@ export default {};
 <style lang="scss" scoped>
 @import "@/style/variables.scss";
 .container {
-  margin-top: 200px;
+  margin-top: 60px;
   position: relative;
   padding: 80px;
   justify-content: space-between;

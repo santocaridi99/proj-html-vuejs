@@ -3,8 +3,9 @@
   <header>
     <div class="container flex">
       <!-- qui ci sarà il logo con img -->
+      <!-- nlogo sta per navbarlogo con valori img con url e msg alt -->
       <div class="logo flex">
-        <img src="../assets/dark-logo.png" alt="MaxCoach" />
+        <img :src="nlogo.img" :alt="nlogo.msg" />
       </div>
       <!-- list div contenente una lista ul li dinamica -->
       <div class="list">
@@ -36,6 +37,8 @@ export default {
   props: {
     //   passo dall'app l'array di oggetti navbar
     navbar: Array,
+    // passo dall'app oggetto nlogo o navbarlogo
+    nlogo:Object
   },
 };
 </script>

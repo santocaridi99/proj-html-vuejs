@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <!-- sezione Header -->
-    <!-- navbar in Headerbox corrisponde al array in data di nome navbar -->
-    <header-box :navbar="navbar"></header-box>
+    <!-- props che passo all Header -->
+    <header-box :navbar="navbar" :nlogo="logo"></header-box>
     <!-- sezione main  -->
     <main-content></main-content>
     <!-- sezione footer -->
@@ -36,6 +36,12 @@ export default {
   },
   data() {
     return {
+      // oggetto con valore img che diamo valore require per farlo leggere 
+      // e msg che servirà per popolare l'alt
+      logo:{
+        img:require("./assets/dark-logo.png"),
+        msg:"MaxCoach"
+      },
       // array di oggetti per la navbar
       navbar: [
         {
