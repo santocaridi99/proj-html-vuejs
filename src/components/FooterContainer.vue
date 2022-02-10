@@ -17,7 +17,7 @@
       <div class="fSecond">
         <div class="explore">
           <h2>Explore</h2>
-          <ul>
+          <ul class="flex">
             <!-- per ogni link presente nell'array links stampo il testo -->
             <li v-for="link in links" :key="link.id">
               <a :href="link.url">
@@ -86,12 +86,12 @@ footer {
           margin-right: 30px;
           font-size: 20px;
           color: $ShadyLady;
+          cursor: pointer;
         }
       }
     }
     .fSecond {
       ul {
-        display: flex;
         flex-wrap: wrap;
         width: 220px;
         li {

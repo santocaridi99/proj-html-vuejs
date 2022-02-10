@@ -1,7 +1,7 @@
 <template>
 <!-- sezione dove inserisco tutti i loghi dei partner -->
   <div class="container">
-    <div class="row">
+    <div class="row flex">
       <div class="client">
         <img src="../assets/client-logo-01.png" alt="logo1" />
       </div>
@@ -32,7 +32,6 @@ export default {};
 <style lang="scss" scoped>
 .row {
   margin-top: 50px;
-  display: flex;
   .client {
     width: calc(100% / 7 - 40px);
     margin: 40px;

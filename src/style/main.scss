@@ -3,7 +3,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+// classe per dare ad un elemento display flex
+.flex{
+    display: flex;
+}
 // le liste nella pagina non avranno style
 ul{
     list-style: none;
@@ -44,6 +47,9 @@ button {
 // colore standard paragrafi
 p{
     color:$pcolor;
+}
+.greenspan{
+    color: #1fad96;
 }
 // prezzi
 .price{

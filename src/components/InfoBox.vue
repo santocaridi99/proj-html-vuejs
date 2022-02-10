@@ -2,7 +2,7 @@
   <!-- sezione infobox -->
   <div class="infocontainer">
     <div class="container">
-      <div class="infocard">
+      <div class="infocard flex">
         <div class="icard">
           <h3>
             Successfully
@@ -44,10 +44,10 @@
     <!-- sezione dei blog più visti -->
     <div class="bg-beige">
       <div class="container">
-        <div class="blogcards">
+        <div class="blogcards flex">
           <div class="blog-text">
             <p>ENJOYABLE INSIGHTS</p>
-            <h1>Most Viewed <span>Best Blogs</span></h1>
+            <h1>Most Viewed <span class="greenspan">Best Blogs</span></h1>
             <h5>&rarr; Become a Better Blogger:Content Planning</h5>
             <h5>&rarr; Promoting Your Online Business on Pinterest</h5>
             <h5>&rarr; Gamification and Game-Based Learning</h5>
@@ -64,7 +64,7 @@
               <p>ARTIST</p>
               <h4>Brush Strokes Energize Trees in Paintings</h4>
               <!-- sezione della card dove ci sono data e visualizzazioni -->
-              <div class="date-views">
+              <div class="date-views flex">
                 <div class="date">
                   <i class="far fa-calendar-alt"></i>
                   <span>May 15,2020</span>
@@ -85,7 +85,7 @@
               <p>ARTIST</p>
               <h4>Pocket-Sized Notebooks Hold Miniature Pointings</h4>
               <!-- sezione della card dove ci sono data e visualizzazioni -->
-              <div class="date-views">
+              <div class="date-views flex">
                 <div class="date">
                   <i class="far fa-calendar-alt"></i>
                   <span>May 15,2020</span>
@@ -110,7 +110,6 @@ export default {};
 .infocontainer {
   .container {
     .infocard {
-      display: flex;
       justify-content: center;
       .icard {
         width: calc(100% / 4);
@@ -136,18 +135,12 @@ export default {};
     padding: 100px;
     .container {
       .blogcards {
-        display: flex;
         .blog-text {
-            width: 50;
-            align-self: center;
-          h1 {
-            span {
-              color: $MountainMeadow;
-            }
-          }
+          width: 50;
+          align-self: center;
         }
         .bcard {
-            // width come se ci fossero tre card
+          // width come se ci fossero tre card
           width: calc(100% / 3 - 70px);
           margin: 40px;
           .bimage {
@@ -167,12 +160,11 @@ export default {};
           .date-views {
             color: $ShadyLady;
             font-size: 12px;
-            display: flex;
-            i{
-                margin-right: 5px;
+            i {
+              margin-right: 5px;
             }
-            .views{
-                margin-left: 20px;
+            .views {
+              margin-left: 20px;
             }
           }
         }

@@ -3,10 +3,10 @@
   <div class="testimonial-container">
     <div class="testimonial-title">
       <p>GREAT WORDS ABOUT MAXCOACH</p>
-      <h1>Our <span>top learners' </span>verbatim</h1>
+      <h1>Our <span class="greenspan">top learners' </span>verbatim</h1>
     </div>
     <!-- contenitore con card delle recensioni -->
-    <div class="testimonial-cards">
+    <div class="testimonial-cards flex">
       <div class="tcard opacity">
         <h3>High level of efficiency and scientific teaching methods</h3>
         <p>
@@ -14,7 +14,7 @@
           the subject I want to learn from the syllabus.Great study portal for
           people like me.
         </p>
-        <div class="t-data">
+        <div class="t-data flex">
           <img src="../assets/testimonial-avata-02.jpg" alt="testimonial1" />
           <div class="t-text">
             <h3>MINA HOLLACE</h3>
@@ -29,7 +29,7 @@
           neat.Then,I'll be able to make things right and shine.MaxCoach guys
           just got me.
         </p>
-        <div class="t-data">
+        <div class="t-data flex">
           <img src="../assets/testimonial-avata-03.jpg" alt="testimonial1" />
           <div class="t-text">
             <h3>Florenece Themes</h3>
@@ -44,7 +44,7 @@
           my best choice.Their tutors are smart and professional when dealing
           with students.
         </p>
-        <div class="t-data">
+        <div class="t-data flex">
           <img src="../assets/testimonial-avata-04.jpg" alt="testimonial1" />
           <div class="t-text">
             <h3>MADLEY PONDOR</h3>
@@ -54,21 +54,24 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="pallini">
+      <div class="row flex">
+        <div class="pallini flex">
           <div class="pallino pdark"></div>
           <div class="pallino"></div>
           <div class="pallino"></div>
           <div class="pallino"></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex">
         <div class="layout-item fistItem">
           <img src="../assets/maxcoach-shape-01.png" alt="layout item" />
         </div>
         <!-- sezione di testo join con pulsante per iniziare i corsi -->
         <div class="join">
-          <h3>Start today for getting <span>Online certification</span></h3>
+          <h3>
+            Start today for getting
+            <span class="greenspan">Online certification</span>
+          </h3>
           <h1>You can be your own guiding star with our help!</h1>
           <button>Get started now</button>
         </div>
@@ -90,21 +93,14 @@ export default {};
   padding: 50px;
   .testimonial-title {
     text-align: center;
-    h1 {
-      span {
-        color: $MountainMeadow;
-      }
-    }
   }
   .testimonial-cards {
-    display: flex;
     .tcard {
       width: calc(100% / 3 - 20px);
       margin: 20px;
       padding: 20px;
       background-color: $white;
       .t-data {
-        display: flex;
         margin-top: 50px;
         img {
           border-radius: 50%;
@@ -120,10 +116,8 @@ export default {};
   .container {
     .row {
       width: 100%;
-      display: flex;
       justify-content: center;
       .pallini {
-        display: flex;
         .pallino {
           margin: 50px 10px;
           width: 10px;
@@ -139,12 +133,6 @@ export default {};
       .join {
         text-align: center;
         margin: 30px;
-        h3 {
-          margin-bottom: 5px;
-          span {
-            color: $MountainMeadow;
-          }
-        }
         h1 {
           margin-top: 0;
         }

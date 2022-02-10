@@ -3,10 +3,10 @@
   <div class="container">
     <div class="detailsIntro">
       <p>MAXCOACH AVAILABLE COURSES</p>
-      <h1>Access <span>Smart Tutoring</span> Program For Benefits.</h1>
+      <h1>Access <span class="greenspan">Smart Tutoring</span> Program For Benefits.</h1>
     </div>
     <!-- tre card dove ci sono spiegati vari dettagli dell'azienda -->
-    <div class="datailscards">
+    <div class="datailscards flex">
       <div class="dcard">
         <div class="dcardimage">
           <img src="../assets/home-2-image-box-01.png" alt="home1" />
@@ -48,7 +48,7 @@
       </div>
     </div>
     <!-- sezione video -->
-    <div class="media">
+    <div class="media flex">
       <div class="video">
         <img src="../assets/home-2-popup-video-poster.jpg" alt="video" />
         <!-- icona youtube -->
@@ -58,14 +58,14 @@
         <div class="subtitle">GET STARTED <strong>EFFORTLESSLY</strong></div>
         <h1>Enjoy Our</h1>
         <!-- scritta con grandezza e colore particolare -->
-        <div><span class="companionship">Companionship</span></div>
+        <div><span class="companionship greenspan">Companionship</span></div>
         <p>
           Sneek peek into what has in store for you on our online teaching and
           mentoring portal.Seek for some hidden hints of early-bird rewards as
           well.
         </p>
         <!-- classe per link che porta a scaricare la guida(per ora un semplice div) -->
-        <div class="freebook">Download free guidebook &rarr;</div>
+        <div class="freebook greenspan">Download free guidebook &rarr;</div>
       </div>
     </div>
   </div>
@@ -79,23 +79,19 @@ export default {};
   margin-top: 80px;
   .detailsIntro {
     text-align: center;
-    h1 {
-      span {
-        color: $MountainMeadow;
-      }
-    }
   }
   .datailscards {
-    display: flex;
     margin-top: 50px;
     .dcard {
       width: calc(100% / 3 - 20px);
       margin: 20px;
+      h4{
+        cursor: pointer;
+      }
     }
   }
   .media {
     margin-top: 70px;
-    display: flex;
     justify-content: space-between;
     .video {
       position: relative;
@@ -117,7 +113,6 @@ export default {};
         margin-bottom: 10px;
       }
       .companionship {
-        color: $MountainMeadow;
         font-size: 40px;
       }
       .freebook{
@@ -125,7 +120,6 @@ export default {};
         font-weight: bolder;
         text-decoration: underline;
         cursor: pointer;
-        color: $MountainMeadow;
       }
     }
   }

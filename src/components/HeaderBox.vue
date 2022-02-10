@@ -1,14 +1,14 @@
 <template>
   <!-- dentro Headerbox inserirò tutto quello che ha a che fare con la navbar principale -->
   <header>
-    <div class="container">
+    <div class="container flex">
       <!-- qui ci sarà il logo con img -->
-      <div class="logo">
+      <div class="logo flex">
         <img src="../assets/dark-logo.png" alt="MaxCoach" />
       </div>
       <!-- list div contenente una lista ul li dinamica -->
       <div class="list">
-        <ul>
+        <ul class="flex">
           <!-- per ogni link  presente nell'array di oggetti navbar -->
           <!-- stamperò un testo e un iconcina -->
           <li v-for="link in navbar" :key="link.id">
@@ -23,7 +23,7 @@
       <div class="userinput">
         <i class="far fa-user-circle"></i>
         <!-- qui inserisco la input -->
-        <div class="inputbox">
+        <div class="inputbox flex">
           <input type="text" placeholder="Search.." />
           <i class="fas fa-search"></i>
         </div>
@@ -48,13 +48,11 @@ header {
   width: 100%;
   .container {
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     .logo {
       width: 160px;
       height: 50px;
-      display: flex;
       align-items: center;
       img {
         width: 100%;
@@ -62,7 +60,6 @@ header {
     }
     .list {
       ul {
-        display: flex;
         li {
           padding: 0 10px;
           a {
@@ -89,7 +86,6 @@ header {
         background-color: $HintofRed;
         padding: 5px;
         height: 40px;
-        display: flex;
         align-items: center;
         border-radius: 5px;
         .fa-search {

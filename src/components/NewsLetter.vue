@@ -1,15 +1,15 @@
 <template>
   <!-- sezione NewsLetter -->
-  <div class="container">
+  <div class="container flex">
     <div class="layout-item">
       <img src="../assets/screenshot2.png" alt="item" />
     </div>
-    <div class="newsletter">
-      <h1>Subscibe <span>Newsletters</span></h1>
+    <div class="newsletter flex">
+      <h1>Subscibe <span class="greenspan">Newsletters</span></h1>
       <p>Enter your email address to register to our newsletter subscription</p>
       <p>delivered on a regular basis!</p>
-      <div class="inputbox">
-        <div class="bg-hint">
+      <div class="inputbox flex">
+        <div class="bg-hint flex">
           <input type="text" placeholder="Enter your email" />
         </div>
         <button>Subscibe</button>
@@ -27,25 +27,16 @@ export default {};
 @import "@/style/variables.scss";
 .container {
   padding: 80px;
-  display: flex;
   justify-content: space-between;
   .newsletter {
-    display: flex;
     flex-direction: column;
     text-align: center;
-    h1 {
-      span {
-        color: $MountainMeadow;
-      }
-    }
     p {
       margin: 0;
     }
     .inputbox {
-        margin-top: 50px;
-      display: flex;
+      margin-top: 50px;
       .bg-hint {
-        display: flex;
         input {
           width: 500px;
         }

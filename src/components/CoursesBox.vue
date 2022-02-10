@@ -9,10 +9,10 @@
         <p>STIMULATED TO LEARN?</p>
         <h1>Featured Online Courses</h1>
       </div>
-      <div class="courses">
-        <div class="course">
+      <div class="courses flex">
+        <div class="course flex">
           <img src="../assets/course-02-480x298.jpg" alt="corso1" />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">$40.00</div>
             <h3>Learning to Write as a Professional Author</h3>
             <div class="details">
@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
-        <div class="course">
+        <div class="course flex">
           <img src="../assets/stock-full-hd-03-480x298.jpg" alt="corso2" />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">Free</div>
             <h3>Customer-centric Info-Tech Strategies</h3>
             <div class="details">
@@ -36,9 +36,9 @@
             </div>
           </div>
         </div>
-        <div class="course">
+        <div class="course flex">
           <img src="../assets/stock-full-hd-04-480x298.jpg" alt="corso3" />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">$19.00</div>
             <h3>Open Programming Courses for Everyone: Python</h3>
             <div class="details">
@@ -49,9 +49,9 @@
             </div>
           </div>
         </div>
-        <div class="course">
+        <div class="course flex">
           <img src="../assets/stock-full-hd-06-480x298.jpg" alt="corso4" />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">$40.00</div>
             <h3>Academic Listening and Note-taking</h3>
             <div class="details">
@@ -62,12 +62,12 @@
             </div>
           </div>
         </div>
-        <div class="course">
+        <div class="course flex">
           <img
             src="../assets/course-featured-image-01-480x298.jpg"
             alt="corso5"
           />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">$39.00</div>
             <h3>Master jQuery in a Short Period of Time</h3>
             <div class="details">
@@ -78,9 +78,9 @@
             </div>
           </div>
         </div>
-        <div class="course">
+        <div class="course flex">
           <img src="../assets/stock-full-hd-05-480x298.jpg" alt="corso6" />
-          <div class="coursetext">
+          <div class="coursetext flex">
             <div class="price">$59.00</div>
             <h3>Introducing to Javascript for Beginners</h3>
             <div class="details">
@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row flex">
       <button>View All courses &rarr;</button>
     </div>
   </div>
@@ -112,17 +112,15 @@ export default {};
       text-align: center;
     }
     .courses {
-      display: flex;
       flex-wrap: wrap;
       .course {
-        display: flex;
         height: 120px;
         width: calc(50% - 60px);
         margin-right: 20px;
         margin-top: 50px;
         padding: 20px;
         cursor: pointer;
-        &:hover{
+        &:hover {
           background-color: $white;
         }
 
@@ -132,21 +130,24 @@ export default {};
           margin-right: 10px;
           object-fit: cover;
         }
-        .details {
-          font-size: 12px;
-          color: $pcolor;
-          i {
-            padding: 0 10px;
+        .coursetext {
+          flex-direction: column;
+          justify-content: space-between;
+          .details {
+            font-size: 12px;
+            color: $pcolor;
+            i {
+              padding: 0 10px;
+            }
           }
         }
       }
     }
   }
   .row {
-    margin:30px 0;
-    display: flex;
+    margin: 30px 0;
     justify-content: center;
-    button{
+    button {
       margin-bottom: 60px;
     }
   }
