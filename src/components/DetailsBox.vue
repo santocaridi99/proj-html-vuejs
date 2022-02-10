@@ -3,7 +3,10 @@
   <div class="container">
     <div class="detailsIntro">
       <p>MAXCOACH AVAILABLE COURSES</p>
-      <h1>Access <span class="greenspan">Smart Tutoring</span> Program For Benefits.</h1>
+      <h1>
+        Access <span class="greenspan">Smart Tutoring</span> Program For
+        Benefits.
+      </h1>
     </div>
     <!-- tre card dove ci sono spiegati vari dettagli dell'azienda -->
     <div class="datailscards flex">
@@ -53,6 +56,9 @@
         <img src="../assets/home-2-popup-video-poster.jpg" alt="video" />
         <!-- icona youtube -->
         <img class="yt" src="../assets/icon-youtube-play.png" alt="youtube" />
+        <!-- decorazioni -->
+        <img class="layout shape" src="../assets/maxcoach-shape-05.png" alt="decoration">
+        <img class="layout shape-second" src="../assets/maxcoach-shape-07.png" alt="decoration">
       </div>
       <div class="mediatext">
         <div class="subtitle">GET STARTED <strong>EFFORTLESSLY</strong></div>
@@ -67,6 +73,12 @@
         <!-- classe per link che porta a scaricare la guida(per ora un semplice div) -->
         <div class="freebook greenspan">Download free guidebook &rarr;</div>
       </div>
+      <!-- decorazione -->
+      <img
+        class="circle"
+        src="../assets/screenshot.png"
+        alt="decoration"
+      />
     </div>
   </div>
 </template>
@@ -85,13 +97,14 @@ export default {};
     .dcard {
       width: calc(100% / 3 - 20px);
       margin: 20px;
-      h4{
+      h4 {
         cursor: pointer;
       }
     }
   }
   .media {
-    margin-top: 70px;
+    position: relative;
+    margin-top: 150px;
     justify-content: space-between;
     .video {
       position: relative;
@@ -100,6 +113,14 @@ export default {};
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+      .shape{
+        top:10%;
+        left:-100px
+      }
+      .shape-second{
+        bottom: -100px;
+        right: -2%;
       }
     }
     .mediatext {
@@ -115,12 +136,17 @@ export default {};
       .companionship {
         font-size: 40px;
       }
-      .freebook{
+      .freebook {
         margin-top: 50px;
         font-weight: bolder;
         text-decoration: underline;
         cursor: pointer;
       }
+    }
+    .circle{
+      position: absolute;
+      top:-90px;
+      left:58%;
     }
   }
 }

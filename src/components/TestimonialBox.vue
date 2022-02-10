@@ -63,7 +63,8 @@
         </div>
       </div>
       <div class="row flex">
-        <div class="layout-item fistItem">
+        <div class="fistItem">
+          <img src="../assets/screenshot3.png" alt="layout item">
           <img src="../assets/maxcoach-shape-01.png" alt="layout item" />
         </div>
         <!-- sezione di testo join con pulsante per iniziare i corsi -->
@@ -89,7 +90,7 @@ export default {};
 @import "@/style/variables.scss";
 .testimonial-container {
   background-color: $HintofRed;
-  margin-top: 80px;
+  margin-top: 200px;
   padding: 50px;
   .testimonial-title {
     text-align: center;

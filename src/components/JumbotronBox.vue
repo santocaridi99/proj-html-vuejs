@@ -14,35 +14,36 @@
       </p>
     </div>
     <!-- area immagine jumbo -->
-    <div class="jumbotron-image flex">
+    <div class="jumbotron-image">
       <img
         class="jumbo"
         src="../assets/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg"
         alt="jumbotron"
       />
       <img
-        class="square"
+        class="square layout"
         src="../assets/maxcoach-shape-08.png"
         alt="decoration1"
       />
       <img
-        class="squaretwo"
+        class="squaretwo layout"
         src="../assets/maxcoach-shape-08.png"
         alt="decoration2"
       />
       <img
-        class="squarethree"
+        class="squarethree layout"
         src="../assets/maxcoach-shape-07.png"
         alt="decotation3"
       />
       <img
-        class="layout-item"
+        class="layout-item layout"
         src="../assets/maxcoach-shape-02.png"
         alt="item2"
       />
+      <img class="circle layout" src="../assets/screenshot.png" alt="decoration4" />
     </div>
-    <!-- are items del jumbotron -->
-    <div class="jumbotron-items flex">
+    <!-- items del jumbotron -->
+    <div class="jumbotron-items flex layout">
       <i class="fas fa-ruler-combined"></i>
       <i class="far fa-life-ring"></i>
       <i class="fas fa-book"></i>
@@ -80,33 +81,34 @@ export default {};
   .jumbotron-image {
     width: 650px;
     position: relative;
-    justify-content: flex-end;
     .jumbo {
       border-radius: 50%;
       z-index: 1;
     }
     .square {
-      position: absolute;
-      left: 0;
+      left: -70px;
       top: 33%;
     }
     .squaretwo {
-      position: absolute;
-      left: 0;
+      left: -70px;
       top: 60%;
     }
     .squarethree {
-      position: absolute;
-      right: 0;
+      right: 40px;
       top: 60%;
     }
-    .layout-item{
-      top:23%;
-      right: -120px;
-      position: absolute;
+    .layout-item {
+      top: 23%;
+      right: -70px;
+    }
+    .circle{
+      top:60%;
+      left: -75px;
+      z-index: -2;
     }
   }
   .jumbotron-items {
+    right: 5px;
     height: 100px;
     align-self: flex-start;
     justify-content: space-between;

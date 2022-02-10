@@ -18,6 +18,8 @@
     <div class="layout-item">
       <img src="../assets/maxcoach-shape-02.png" alt="item" />
     </div>
+    <!-- shape rotato -->
+    <img class="layout rshape" src="../assets/maxcoach-shape-09.png" alt="layout decoration">
   </div>
 </template>
 <script>
@@ -26,6 +28,8 @@ export default {};
 <style lang="scss" scoped>
 @import "@/style/variables.scss";
 .container {
+  margin-top: 200px;
+  position: relative;
   padding: 80px;
   justify-content: space-between;
   .newsletter {
@@ -45,6 +49,10 @@ export default {};
         margin: 0;
       }
     }
+  }
+  .rshape{
+    right: 100px;
+    top: -50px;
   }
 }
 </style>
