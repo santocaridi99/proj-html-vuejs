@@ -36,43 +36,55 @@ export default {
   },
   data() {
     return {
-      // oggetto con valore img che diamo valore require per farlo leggere 
+      // oggetto con valore img che diamo valore require per farlo leggere
       // e msg che servirà per popolare l'alt
-      logo:{
-        img:require("./assets/dark-logo.png"),
-        msg:"MaxCoach"
+      logo: {
+        img: require("./assets/dark-logo.png"),
+        msg: "MaxCoach",
       },
       // array di oggetti per la navbar
       navbar: [
         {
           id: "1",
           text: "Home",
-          url: "/",
+          dropone: "Infos",
+          droptwo: "Our Story",
+          droptree: "Join us",
         },
         {
           id: "2",
           text: "Pages",
-          url: "/",
+          dropone: "Page1",
+          droptwo: "Page 2",
+          droptree: "Page 3",
         },
         {
           id: "3",
           text: "Courses",
-          url: "/",
+          dropone: "Javascript",
+          droptwo: "Artist",
+          droptree: "Graphic",
         },
         {
           id: "4",
           text: "Features",
-          url: "/",
+          dropone: "Features 1",
+          droptwo: "Features2",
+          droptree: "Features3",
         },
         {
           id: "5",
           text: "Blog",
-          url: "/",
+          dropone: "Artist Blog",
+          droptwo: "Best blogs",
+          droptree: "EBlog",
         },
         {
           id: "6",
           text: "Shop",
-          url: "/",
+          dropone: "Shop courses",
+          droptwo: "Shop artist",
+          droptree: "Shop gadget",
         },
       ],
       // array per indirizzi nel footer

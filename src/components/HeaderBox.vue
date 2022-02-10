@@ -12,11 +12,22 @@
         <ul class="flex">
           <!-- per ogni link  presente nell'array di oggetti navbar -->
           <!-- stamperò un testo e un iconcina -->
-          <li v-for="link in navbar" :key="link.id">
-            <a :href="link.url">
-              {{ link.text }}
-            </a>
+          <!-- key do l'indice più l'id cosi posso sfruttare l'indice al click -->
+          <!-- al click dell li eseguo metodo openmodal che accetta come ingresso il valore dell'indice i -->
+          <!-- (guarda i methods) -->
+          <li
+            v-for="(link, i) in navbar"
+            :key="link.id + i"
+            @click="openModal(i)"
+          >
+            <span>{{ link.text }}</span>
             <i class="fas fa-chevron-down"></i>
+            <!-- modale comparirà solo se modal  è true  e se l'inidice è in posizione desiderata dal click  -->
+            <div class="modal" v-if="modal && modalIndex === i">
+              <div>{{ link.dropone }}</div>
+              <div>{{ link.droptwo }}</div>
+              <div>{{ link.droptree }}</div>
+            </div>
           </li>
         </ul>
       </div>
@@ -38,7 +49,24 @@ export default {
     //   passo dall'app l'array di oggetti navbar
     navbar: Array,
     // passo dall'app oggetto nlogo o navbarlogo
-    nlogo:Object
+    nlogo: Object,
+  },
+  data() {
+    // imposto in data un booleano settato a falso per la modale
+    // un indice relativo alla modale = 0
+    return {
+      modal: false,
+      modalIndex: 0,
+    };
+  },
+  // metodo se chiamo openModal ,modal index sarà uguale ad un indice esterno in questo caso la i del ciclo for 
+  // della lista
+  // e modal da false passerà a true e viceversa
+  methods: {
+    openModal(index) {
+      this.modalIndex = index;
+      this.modal = !this.modal;
+    },
   },
 };
 </script>
@@ -69,12 +97,30 @@ header {
       ul {
         li {
           padding: 0 10px;
-          a {
+          cursor: pointer;
+          span {
             color: $codGray;
+            position: relative;
+            &:hover {
+              color: blue;
+            }
           }
           // arrow verso il basso
           i {
-            font-size: 10px;
+            font-size: 12px;
+            margin-left: 5px;
+          }
+          .modal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            background-color: white;
+            div {
+              padding: 10px;
+              cursor: pointer;
+              border: 1px solid black;
+            }
           }
         }
       }
