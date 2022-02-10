@@ -36,6 +36,10 @@ button {
     color: $white;
     margin: 10px 0;
     cursor: pointer;
+    // hover bottone
+    &:hover{
+        background-color:#3f3a64;
+    }
 }
 // colore standard paragrafi
 p{

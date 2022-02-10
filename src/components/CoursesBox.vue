@@ -116,12 +116,18 @@ export default {};
       flex-wrap: wrap;
       .course {
         display: flex;
-        width: calc(50% - 20px);
+        height: 120px;
+        width: calc(50% - 60px);
         margin-right: 20px;
         margin-top: 50px;
+        padding: 20px;
+        cursor: pointer;
+        &:hover{
+          background-color: $white;
+        }
 
         img {
-          width: 18%;
+          width: 25%;
           border-radius: 50%;
           margin-right: 10px;
           object-fit: cover;
